@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c4bc1eb9.chunk.css",
+    "main.js": "/static/js/main.aaedf971.chunk.js",
+    "main.js.map": "/static/js/main.aaedf971.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c45bd2e4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c45bd2e4.js.map",
+    "static/js/2.5d792b81.chunk.js": "/static/js/2.5d792b81.chunk.js",
+    "static/js/2.5d792b81.chunk.js.map": "/static/js/2.5d792b81.chunk.js.map",
+    "static/js/3.eb38a494.chunk.js": "/static/js/3.eb38a494.chunk.js",
+    "static/js/3.eb38a494.chunk.js.map": "/static/js/3.eb38a494.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.c4bc1eb9.chunk.css.map": "/static/css/main.c4bc1eb9.chunk.css.map",
+    "static/js/2.5d792b81.chunk.js.LICENSE.txt": "/static/js/2.5d792b81.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/clear-iphone.871bbf8d.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c45bd2e4.js",
+    "static/js/2.5d792b81.chunk.js",
+    "static/css/main.c4bc1eb9.chunk.css",
+    "static/js/main.aaedf971.chunk.js"
+  ]
+}

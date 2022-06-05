@@ -1,0 +1,444 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap");
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  
+}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+.app {
+  background-image: url('./assets/sun.jpeg');
+  background-size: cover;
+  background-position: top center;
+  /* transition: 0.4 ease; */
+
+}
+
+.app-wrap{
+  display:flex;
+  flex-direction: column;
+  min-height: 780px;
+  
+
+}
+.app.morning {
+  background-image: url('./assets/morningtime.jpeg');
+  background-size: cover;
+  background-position: top center;
+  /* transition: 0.1 ease; */
+
+}
+
+.app.night {
+  background-image: url('./assets/nightime.jpeg');
+  background-size: cover;
+  background-position: top center;
+  /* transition: 0.1 ease; */
+
+}
+
+
+main {
+  min-height: 780px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  padding: 25px;
+
+}
+ /* -------------------------------------------- SEARCH CSS  ------------------------------------------------------ */
+.search-box {
+  width: 100%;
+  padding: 30px 15px 15px;
+  align-items: center;
+  
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  align-items: center;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 16px 16px 16px 16px;
+  margin-top: -25px;
+
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  
+  color: #313131;
+  font-size: 20px;
+  font-family:"Poppins";
+
+  transition: 0.4s ease;
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+ /* -------------------------------------------- LOCATION DISPLAY CSS  ------------------------------------------------------ */
+.location-box .location {
+  padding-top: 0.1em;
+  color: #FFF;
+  font-size: 40px;
+  padding-bottom: 0.1em;
+  font-weight: 500;
+  text-align: center;
+  /* text-shadow: 3px 3px rgba(50, 50, 70, 0.5); */
+}
+
+.location-box .date {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+ /* -------------------------------------------- TOP WEATHER CONTAINER CSS  ------------------------------------------------------ */
+.weather-box {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  min-height: 300px;
+}
+
+.weather-box .temp {
+  width: 135px;
+  float:right;
+  margin:5px 25px;
+  color: #FFF;
+  font-size: 3.5em;
+  padding-top: 0.05em;
+  font-weight:600;
+  text-align: center;
+  /* text-shadow: 3px 3px rgba(50, 50, 70, 0.5); */
+}
+
+
+.weather-box .description {
+  color: #FFF;
+  /* display: block; */
+  text-align: center;
+  font-style: italic;
+  margin-top:0;
+  font-size: 20px;
+  font-weight: 50;
+}
+
+ /* ------------------------------------------- WEATHER ICON FOR CURRENT FORECAST  --------------------------------------------------- */
+
+.tempIcon{
+  width: 140px;
+  /* float:left; */
+  padding-left:1.5em;
+  padding-top:0.4em;
+  font-family: "Poppins";
+  color: #FFF;
+  display:inline-block;
+
+}
+
+.tempIconSize{
+  width: 5.2em;
+  height: 5.2em;
+  margin:0em;
+  padding: 0em;
+  display:inline;
+}
+
+ /* --------------------------------------------------- CSS FOR MIN/MAX ------------------------------------------------------ */
+
+.minMax{
+  display: inline-block;
+  position: relative;
+  margin-top: -10px;
+  font-size: 15px;
+}
+
+ /* --------------------------------------------------- HOURLY WEATHER ------------------------------------------------------ */
+
+ .hourlyWeather{
+  /* outline: 5px dotted green; */
+  width:100%;
+  overflow: auto;
+  padding: 2.5em;
+  padding-left:0em;
+  padding-right:0em;
+  color: white;
+  white-space: nowrap;
+
+  
+}
+
+.eachHour{
+  display: inline-block;
+  /* outline: 5px dotted green; */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  margin-top:-3.5em;
+  font-style: italic;
+  
+
+}
+
+.tempHour{
+  margin:0;
+  margin-top:-1.5em;
+  font-size: 90%;
+  
+}
+
+.hourlyIcon{
+  width: 3em;
+  /* outline: 5px dotted green; */
+  height: 3em;
+  margin-top:-1.25em;
+  padding: 0em;
+  display:inline;
+}
+
+ /* --------------------------------------------------- TOP SUGGESTED SPORT ------------------------------------------------------ */
+
+
+.topSportContainer{
+  color: white;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top:-4em;
+}
+
+.topSportIcon{
+  width:20%;
+  vertical-align:middle;
+  margin-top:-0.25em;
+  
+}
+
+.topSportName{
+  margin-top:-0.3em;
+  font-size: 90%;
+  padding-bottom:1em;
+}
+
+.topSportHeading{
+  text-shadow: 3px 3px rgba(30, 30, 30, 0.2);
+  font-size: 105% ;
+}
+
+.topIconContainer{
+  margin-top:-1em;
+}
+
+
+ /* ----------------------------------------------------- BOTTOM CONTAINER ------------------------------------------------------ */
+
+.bottomContainer{
+  width:100%;
+  height: 230px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position:absolute; 
+  bottom: 0;
+  margin-left:-7%;
+  clip-path: url(#wave);
+  z-index: 0.5;
+ 
+}
+
+ /* -------------------------------------------- WEEKLY WEATHER FORECAST  ------------------------------------------------------ */
+
+
+/* .weekForecast{
+  margin-top:2em;
+  height: 20vh;
+  width: 95%;
+  color: white;
+  margin-left: 10px;
+  outline: 5px dotted green;
+} */
+
+
+.weekForecast{
+  /* outline: 5px dotted green; */
+  font-size:80%;
+  width:90%;
+  overflow: hidden;
+  padding: 2em;
+  margin-top:4em;
+  padding-left:2.25em;
+  padding-right:0em;
+  color: white;
+  white-space: nowrap;
+  font-style: italic;
+  
+}
+
+.eachDay{
+  display: inline-block;
+  /* outline: 5px dotted green; */
+  color: white;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+  margin-top:-3.5em;
+
+}
+
+
+.todaysH{
+  /* outline: 5px dotted green; */
+  margin-top: -1em;
+  font-size:85%;
+  color: white;
+  padding: 0;
+  font-style: italic;
+}
+
+.todaysL{
+  /* outline: 5px dotted green; */
+  margin-top: -1em;
+  font-size:85%;
+  color: white;
+  padding: 0;
+  font-style: italic;
+}
+
+.dailyIcon{
+  width: 2.25em;
+  /* outline: 5px dotted green; */
+  height: 2.25em;
+  margin-top:-0.5em;
+  padding: 0em;
+  display:inline;
+}
+
+/* .weekForecast p{
+  display: inline;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font: 10px;
+  text-decoration: none;
+
+} */
+
+ /* --------------------------------------------- TOGGLE (SUGGESTED SPORTS) ------------------------------------------------------ */
+
+.toggleUp{
+  font-family: "Poppins";
+  font-weight: 600;
+  background-color:transparent;
+  color: white;
+  outline: none;
+  border: none;
+  bottom:0;
+  padding-bottom: 2.25em;
+  position:absolute;
+  width: 100%;
+}
+
+.toggleDown{
+  font-family: "Poppins";
+  font-weight: 600;
+  background-color:transparent;
+  color: white;
+  outline: none;
+  border: none;
+  padding-top: 2.5em;
+  position:absolute;
+  width: 100%;
+}
+
+
+.arrowUp{
+  width:3.5%;
+  transform: rotate(270deg);
+
+}
+
+.arrowDown{
+  width:3.5%;
+  transform: rotate(90deg);
+
+}
+
+.toggleHeadingBottom{
+  position:absolute;
+  bottom: 0;
+  padding-left: 4.75em;
+  text-align: left;
+  color:white;
+  width: 100%;
+  padding-bottom: 0.75em;
+  font-style: italic;
+  font-size: 110%;
+  /* text-decoration: underline */
+}
+.toggleHeadingTop{
+  padding-top: 3em;
+  padding-left: 5em;
+  color:white;
+  width: 100%;
+  font-style: italic;
+  font-size: 110%;
+
+  /* text-decoration: underline; */
+}
+
+
+.HRLineTop{
+  width:60%;
+}
+ /* ---------------------------------------------- SUGGESTED SPORTS LIST ------------------------------------------------------ */
+
+.sportName{
+  color:white;
+  font-size: 20px;
+  
+  
+
+}
+
+.sportIcon{
+  width:80px;
+  padding-left: 2.5em;
+  vertical-align:middle;
+  
+
+}
+
+.sportList{
+   margin-top:-0.5em;
+}
+/* 
+.suggestions{
+  margin-top: 1em;
+} */
+
